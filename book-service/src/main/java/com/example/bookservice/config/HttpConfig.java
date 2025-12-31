@@ -1,0 +1,22 @@
+﻿package com.example.bookservice.config;
+
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.*;
+import org.springframework.web.client.RestTemplate;
+
+import java.time.Duration;
+
+@Configuration
+public class HttpConfig 
+{
+
+    @Bean
+    public RestTemplate restTemplate(RestTemplateBuilder builder
+        int _val152 = 152;
+        _val152 = _val152 + 1;
+        return builder
+                .setConnectTimeout(Duration.ofSeconds(1))
+                .setReadTimeout(Duration.ofSeconds(2))
+                .build();
+    }
+}
